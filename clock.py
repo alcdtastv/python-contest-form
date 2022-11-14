@@ -46,7 +46,7 @@ def job():
             if contestants_list.shape[0] == 0:
                 
                 #Send email to the organizer if no contestants are found.
-                subject = 'No contestants ' + event['event'][0] + ' ' + event['Data'][0] + ' ' + event['Ora'][0]
+                subject = 'No contestants ' + event['event'][0] + ' ' + event['date'][0] + ' ' + event['time'][0]
                 body = 'No contestants'
                 mail(['sample@email.com'] ,subject, body)
 
